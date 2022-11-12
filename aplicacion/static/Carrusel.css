@@ -1,0 +1,338 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;800&display=swap');
+
+
+.titulo-aupicia h3{
+	font-size: 25px;
+	text-align: center;
+	margin: 90px 0px 40px 0px;
+	color: white;
+	background-color: #409bd0;
+	padding: 20px;
+
+
+}
+.titulo-aupicia span{
+	color: white;
+}
+
+.veterenary  {
+	display: flex;
+	margin-top: 0px;
+	marker-end: 50px;
+               
+  }
+
+
+.ContenidoP .item {
+	height: 70vh;
+  width: 130vh;
+  margin: 0px;
+
+}
+
+.ContenidoP{
+      margin: 0px 20px 0px 40px;
+      width: 130vh;
+      height: 70vh;
+
+
+
+}
+
+.banners {
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	height: 70vh;
+	width: 130vh;
+}
+
+.capas{
+    width: 100%;
+    opacity: 0.2;
+    height: 100%;
+    position: absolute;
+    background: var(--brightOrange);
+    
+  }
+
+
+
+
+.Izquierda{
+		margin-left: 50px;
+
+}
+
+.derecha{
+	margin-right: 50px;
+}
+
+
+.img-veterian {
+	width: 100%;
+	max-width: 350px;
+	margin-top: 0px;
+	height: 400px;
+	padding: 0px 0px 10px 0px;
+ 	
+}
+
+.img-veterian img{
+	width: 100%;
+	max-width: 400px;
+	height: auto;
+	padding: 0px 0px 15px 0px;
+
+}
+
+
+.logo-slider{
+	width: 100%;
+	height: auto;
+	margin: 20px  0px;
+	overflow: hidden;
+	position: relative;
+}
+.logo-slider .slider-contenido{
+	display: flex;
+	animation: scroll 40s linear infinite;
+	width: calc(200px * 8);
+	-wetkit-animation: scroll 40s linear infinite;
+
+}
+
+.logo-slider .logo-s{
+	width: 200px;
+
+
+}
+
+.logo-slider .logo-s img{
+	width: 100%;
+	height: 140px;
+
+
+}
+
+@keyframes scroll{
+	0%{
+		-webkit-transform: translateX(0);
+		transform: translateX(0);
+
+	}
+	100%{
+		-webkit-transform: translateX(calc(-200px * 4));
+		transform: translateX(calc(-200px * 4));
+
+	}
+}
+
+@media only screen and (max-width: 930px) {
+	.veterenary  {
+      display : block;
+      margin: 0px 0px 40px 0px;
+               
+  }
+  .ContenidoP{
+      margin: 50px auto;
+      width: 50vh;
+      height: 60vh;
+
+}
+.img-veterian{
+	width: 100%;
+	height: auto;
+	padding: 0px 0px 15px 0px;
+
+}
+
+.img-veterian img{
+	width: 100%;
+	height: auto;
+	padding: 0px 0px 15px 0px;
+
+}
+
+
+    .titulo-aupicia { font-size: calc(1em + 1vw) }
+
+ 
+
+.banners {
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 60vh;
+	  width: 50vh;
+
+	}
+
+
+
+
+.logo-slider{
+	width: auto;
+	height: auto;
+	margin: 100px 0px 0px 0px;
+	overflow: hidden;
+	position: relative;
+}
+ 
+}
+
+
+
+
+
+
+.contenido{
+	text-align: center;
+	margin-top: 50px;
+}
+
+.titulo h5{
+	font-size: 60px;
+	font-family: 'Kaushan Script';
+	color: var(--primary-color);
+	
+}
+.titulo p{
+	font-size: 30px;
+	color: var(--brightOrange);
+	
+}
+
+.galeria{
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
+}
+
+.galeria img{
+  max-width: 300px;
+  padding: 1rem;
+  height: auto;
+  filter: brightness(1.1);
+  mix-blend-mode: multiply;
+
+}
+
+
+.Items4{
+	margin: 90px 20px 10px 20px;
+	border-radius: 50px;
+}
+.Pregunta h6{
+	font-size: 30px;
+	color: var(--primary-color);
+}
+
+
+.btnad{
+  flex-flow: wrap;
+  padding: 1rem 0rem 1rem 0rem;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 12% 5%;
+  width: 25%;
+  min-height: 15rem;
+
+}
+
+.Tarjeta-1{
+	border-radius: 20px;
+	border-color:var(--card-color) ;
+	background-color: var(--theme-color);
+}
+.Tarjeta-1:hover{
+	background-color: #0DD976;
+	color: white;
+}
+
+
+
+.Noticia{
+ 	margin-top: 80px;
+	justify-content: center;
+	text-align: center;
+}
+
+.Noticia .Noticia-titulo h5{
+
+	font-size: 40px;
+	position: absolute;
+	font-family: 'Kaushan Script';
+	margin:  60px 0px 0px 150px; 
+	color: var(--primary-color);
+}
+.video-Noticia{
+	display: flex;
+	margin: 0px 10px 0px 600px;
+}
+
+
+
+@media only screen and (max-width: 930px) {
+	.Noticia{
+ 	margin-top: 40px;
+	justify-content: center;
+	text-align: center;
+	marker-end: 40px;
+}
+
+	
+
+    .video-Noticia{
+    	margin-left: 0px;
+    	position: relative;
+    	margin: auto;
+    
+    }
+    .Noticia .Noticia-titulo h5{
+    	font-size: 40px;
+    	position: relative;
+    	font-family: 'Kaushan Script';
+    	margin:  auto; 
+    	color: var(--primary-color);
+    	padding: 20px;
+
+}
+
+
+    
+   
+     .btnad button{
+	    background-color: var( --secundary-color);
+	    width: auto;
+      height: auto;
+      padding: 10px 5px;
+	    border: none;
+	    border-radius: 20px;
+	    margin: 1rem;
+	    text-transform: uppercase;
+	    color: var(--theme-color);
+}
+     .btnad button:hover{
+     	background-color: var( --primary-color );
+	    color: white;
+}
+ 
+}
+
+@media only screen and (max-width: 990px){
+.btnad {
+  float: none;
+  justify-content: center;
+  align-items: center;
+  margin: 2% 2%;
+  width: 100%;
+  display: flex;
+  min-height: 1rem;
+}
+
+}

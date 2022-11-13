@@ -1,7 +1,7 @@
 from django import http
 from django.shortcuts import render, redirect
 from django.http import HttpResponse, response
-from flask import request, request_tearing_down
+#from flask import request, request_tearing_down
 from .models import Mascotas, Productos
 from .forms import MascotasForm, ProductosForm
 from django.core.mail import send_mail

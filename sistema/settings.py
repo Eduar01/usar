@@ -91,6 +91,7 @@ WSGI_APPLICATION = 'sistema.wsgi.application'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
 """
+#BASE DE DATOS MySQL
 DATABASES = {
     #Cambiamos el nombre de nuestra base de datos que sera mysql
     'default': {
@@ -104,8 +105,25 @@ DATABASES = {
     }
 }
 """
-
-
+#----------------------------------------------------
+"""
+#BASE DE DATOS POSTGRESQL
+DATABASES = {
+    #Cambiamos el nombre de nuestra base de datos que sera mysql
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        #Nombre de nuestra base de datos
+        'NAME': 'daj4bn0q6j3m50',
+        'USER': 'jqveyjfrjzkgyi',
+        'PASSWORD': 'dadedcf2926a73e421c5603dacb6b87e9d060d74fa90cc4ea97a9ccd1da905dd',
+        'HOST': 'ec2-44-205-177-160.compute-1.amazonaws.com',
+        'PORT': '5432'
+    }
+}
+"""
+#-----------------------------------------
+"""
+#BASE DE DATOS SQLITE3
 DATABASES = {
     #Base de datos default(sqlite3)
     'default': {
@@ -113,18 +131,17 @@ DATABASES = {
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
-
+"""
+#------------------------------------------
 
 import dj_database_url
 from decouple import config
 
-"""
 DATABASES = {
     'default': dj_database_url.config(
         default=config('DATABASE_URL')
     )
 }
-"""
 
 """
 #load_dotenv(find_dotenv())

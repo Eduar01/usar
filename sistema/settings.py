@@ -10,8 +10,8 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 
-from pathlib import Path
 import os
+from pathlib import Path
 from re import LOCALE
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -26,7 +26,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-+!8kxy9a($_bm!aj!+y0b-q-s+$7nc!w0c2#0@c1714a_oww_w'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 #ALLOWED_HOSTS = ['mascotas-xd.herokuapp.com', '127.0.0.1']
 ALLOWED_HOSTS = ['*']
@@ -90,7 +90,7 @@ WSGI_APPLICATION = 'sistema.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
-"""
+
 #BASE DE DATOS MySQL
 DATABASES = {
     #Cambiamos el nombre de nuestra base de datos que sera mysql
@@ -104,7 +104,7 @@ DATABASES = {
         'PORT': '3306'
     }
 }
-"""
+
 #----------------------------------------------------
 """
 #BASE DE DATOS POSTGRESQL
@@ -133,7 +133,7 @@ DATABASES = {
 }
 """
 #------------------------------------------
-
+"""
 import dj_database_url
 from decouple import config
 
@@ -142,6 +142,7 @@ DATABASES = {
         default=config('DATABASE_URL')
     )
 }
+"""
 
 """
 #load_dotenv(find_dotenv())
@@ -220,7 +221,7 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'static/imagenes')
 #MEDIA_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/media/'
 MEDIA_URL = '/imagenes/'
 
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+#STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 #Colocamos la ubicacion del login
 LOGIN_REDIRECT_URL = 'inicio'

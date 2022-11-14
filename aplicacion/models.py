@@ -1,5 +1,5 @@
 from distutils.command.upload import upload
-from tkinter import image_names
+#from tkinter import image_names
 from tokenize import blank_re
 from django.db import models
 

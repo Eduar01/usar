@@ -106,7 +106,7 @@ DATABASES = {
 }
 
 #----------------------------------------------------
-"""
+
 #BASE DE DATOS POSTGRESQL
 DATABASES = {
     #Cambiamos el nombre de nuestra base de datos que sera mysql
@@ -120,7 +120,7 @@ DATABASES = {
         'PORT': '5432'
     }
 }
-"""
+
 #-----------------------------------------
 """
 #BASE DE DATOS SQLITE3

@@ -5,7 +5,7 @@ from django.utils.functional import keep_lazy, keep_lazy_text
 
 class MascotasAdmin(admin.ModelAdmin):
     #Lista todos los datos
-    list_display = ('id','titulo','foto','sexo','telefono','descripcion')
+    list_display = ('id','titulo','imagen','foto','sexo','telefono','descripcion')
 
     #Buscar los datos
     search_fields = ('titulo',)
@@ -31,7 +31,7 @@ class MascotasAdmin(admin.ModelAdmin):
 
 class ProductosAdmin(admin.ModelAdmin):
     #Lista todos los datos
-    list_display = ('id','titulo','foto','precio')
+    list_display = ('id','titulo','imagen','foto','precio')
 
     #Buscar los datos
     search_fields = ('titulo',)

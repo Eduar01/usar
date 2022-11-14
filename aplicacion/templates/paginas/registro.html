@@ -16,7 +16,7 @@
     <header>
       <span>
         <img  style="filter: brightness(1.1);
-        mix-blend-mode: multiply;" src="https://previews.123rf.com/images/jamesstar/jamesstar1705/jamesstar170500086/77445163-logotipo-de-la-impresi%C3%B3n-de-la-pata-del-perro.jpg"
+        mix-blend-mode: multiply;" src="static/img/dog-ga637d042b_640.jpg"
              width="250" height="250" alt="">
       </span>
     </header>
@@ -29,7 +29,7 @@
   </section>
 <style>
 body {
-  background: url(https://img.freepik.com/vector-gratis/marco-vector-perros-sobre-fondo-blanco_53876-127700.jpg?w=2000);
+  background: url(static/img/dog-gfc16558d1_1920.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   object-fit: cover;
@@ -103,13 +103,76 @@ transition: .35s linear;
 button#submit:hover {
 background-color: greenyellow;
 }
-@media (max-width:700px) {
-  .form-contact{
-    top: 200px;
-    margin: 10px;
-    width: 85%;
-    height: 50%;
+@media screen and (max-width: 900px){
+  body {
+    background:none;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    font-family: Arial, Helvetica, sans-serif;  
   }
+  
+  .form-contact {
+    background: #FFF;
+    width: 270px;
+    position: absolute;
+    top: 50%;
+    left: auto;
+    transform: none;
+    box-shadow: none;
+  }
+  header span {
+    display: block;
+    text-align: center;
+    padding: 2rem;
+    weight:200px;
+  }
+  img{
+    weight:200px;
+    justify-content:center;
+  }
+  .contact {
+    padding: .8rem;
+    overflow: hidden;
+    color: rgb(5, 5, 5);
+  }
+  
+  .contact label, .contact input, .contact textarea {
+    display: block;
+    width: 100%;
+    margin-bottom: 5px;   
+  }
+  
+  .contact label {
+    font-weight: 700;
+  }
+  
+  .contact input:not([type='submit']), .contact textarea {
+    border: none;
+    border-bottom: 4px solid #020202;
+    margin-bottom: 10px;
+    font-size: 20px;
+    outline: none;
+    color: gray;
+  }
+  
+  .contact textarea {
+    min-height: 100px;
+  }
+  button#submit {
+  width: 100%;
+  padding: 20px 0;
+  text-align: center;
+  background: #049276;
+  font-size: 20px;
+  color: #fff;
+  border: 0;
+  border-radius: 4px;
+  opacity: .8;
+  transition: .35s linear;
+  }
+  
+
 }
 </style>
 </body>

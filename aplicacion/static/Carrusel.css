@@ -31,9 +31,9 @@
 }
 
 .ContenidoP{
-      margin: 0px 20px 0px 40px;
+      margin: 0px 30px 0px 40px;
       width: 130vh;
-      height: 70vh;
+      height: 75vh;
 
 
 
@@ -44,7 +44,7 @@
 	background-size: cover;
 	background-position: center center;
 	background-repeat: no-repeat;
-	height: 70vh;
+	height: 75vh;
 	width: 130vh;
 }
 
@@ -53,7 +53,7 @@
     opacity: 0.2;
     height: 100%;
     position: absolute;
-    background: var(--brightOrange);
+    background: var(--slider-anuncio);
     
   }
 
@@ -75,15 +75,14 @@
 	max-width: 350px;
 	margin-top: 0px;
 	height: 400px;
-	padding: 0px 0px 10px 0px;
  	
 }
 
 .img-veterian img{
-	width: 100%;
+	width: 95%;
 	max-width: 400px;
 	height: auto;
-	padding: 0px 0px 15px 0px;
+	padding: 0px 0px 10px 0px;
 
 }
 
@@ -91,15 +90,16 @@
 .logo-slider{
 	width: 100%;
 	height: auto;
-	margin: 20px  0px;
+	margin: 60px  0px;
 	overflow: hidden;
 	position: relative;
+
 }
 .logo-slider .slider-contenido{
 	display: flex;
-	animation: scroll 40s linear infinite;
-	width: calc(200px * 8);
-	-wetkit-animation: scroll 40s linear infinite;
+	animation: scroll 10s linear infinite;
+	width: calc(300px * 8);
+	-wetkit-animation: scroll 10s linear infinite;
 
 }
 
@@ -111,7 +111,8 @@
 
 .logo-slider .logo-s img{
 	width: 100%;
-	height: 140px;
+	height: 100px;
+	padding: 20px;
 
 
 }
@@ -129,54 +130,61 @@
 	}
 }
 
+                                /*-------------*/
+                                /*responsive css*/
+                                /*-------------*/
 @media only screen and (max-width: 930px) {
 	.veterenary  {
       display : block;
-      margin: 0px 0px 40px 0px;
+      margin: 0px 0px 90px 0px;
                
   }
   .ContenidoP{
       margin: 50px auto;
-      width: 50vh;
+      width: auto;
       height: 60vh;
 
 }
+.ContenidoP .item {
+	height: 70vh;
+  width: auto;
+  margin: 0px;
+
+}
+
+
+.banners {
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	height: 75vh;
+	width: auto;
+	object-fit: fill;
+}
 .img-veterian{
+	
+	padding: 0px 0px 40px 0px;
 	width: 100%;
-	height: auto;
-	padding: 0px 0px 15px 0px;
+	justify-content: center;
+	text-align: center;
 
 }
 
 .img-veterian img{
-	width: 100%;
-	height: auto;
-	padding: 0px 0px 15px 0px;
+	width: auto;
+	
+	padding: 0px 0px 30px 0px;
+	
 
 }
 
-
     .titulo-aupicia { font-size: calc(1em + 1vw) }
-
- 
-
-.banners {
-    -webkit-background-size: cover;
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    height: 60vh;
-	  width: 50vh;
-
-	}
-
-
-
 
 .logo-slider{
 	width: auto;
 	height: auto;
-	margin: 100px 0px 0px 0px;
+	margin: 190px 0px 0px 0px;
 	overflow: hidden;
 	position: relative;
 }
@@ -184,6 +192,120 @@
 }
 
 
+
+                                /*-------------*/
+                                /*css*/
+                                /*-------------*/
+
+.team {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    flex-wrap: wrap;
+    font-family: 'Baloo 2', cursive;
+	margin-top: -80px;
+}
+
+.cardc {
+    position: relative;
+    width: 250px;
+    height: 400px;
+    background: var(--theme-color);
+	color: var(--text-color);
+    border-radius: 5px;
+    overflow: hidden;
+    transition: .5s;
+    margin: 15px 20px;
+}
+
+.cardc:hover {
+    box-shadow: 0 5px 15px var(--slider-anuncios);
+    transform: translateY(-15px);
+}
+
+.cardc .head {
+    height: 135px;
+    width: 100%;
+    position: relative;
+}
+
+.cardc .head .circle {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background: var(--user-color);
+    bottom: 0;
+}
+
+.cardc .head .img {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    background: var(--theme-color);
+    padding: 5px;
+    border-radius: 50%;
+    bottom: -30%;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.cardc .head .img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+
+.cardc .description {
+    height: 220px;
+    padding: 40px 20px 20px 20px;
+    border-bottom: solid 1px rgba(6, 74, 76, .18);
+    text-align: center;
+}
+
+.cardc .description h3 {
+    color: var(--user-color);
+	font-size: larger;
+
+}
+
+.cardc .description h4 {
+    color: var(--text-color);
+	font-size: large;
+
+}
+
+.cardc .description p {
+    margin-top: 20px;
+    font-size: 13px;
+}
+
+
+.cardc .contact {
+    width: 100%;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cardc .contact a {
+    text-decoration: none;
+    color: #fff;
+    background: var(--darkCyan);
+    padding: 5px 20px;
+    border-radius: 5px;
+    transition: .3s;
+}
+
+.cardc .contact a:hover {
+    
+    background: var(--darkCyan);
+   
+}
 
 
 
@@ -194,40 +316,30 @@
 }
 
 .titulo h5{
-	font-size: 60px;
+	font-size: 40px;
 	font-family: 'Kaushan Script';
 	color: var(--primary-color);
 	
 }
 .titulo p{
-	font-size: 30px;
-	color: var(--brightOrange);
+	font-size: 20px;
+	color: var(--text-color);
 	
 }
 
-.galeria{
-  display: flex;
-  flex-flow: wrap;
-  justify-content: center;
-}
-
-.galeria img{
-  max-width: 300px;
-  padding: 1rem;
-  height: auto;
-  filter: brightness(1.1);
-  mix-blend-mode: multiply;
-
-}
-
-
 .Items4{
-	margin: 90px 20px 10px 20px;
+	margin: -30px 20px 10px 20px;
 	border-radius: 50px;
+	text-align: center;
 }
 .Pregunta h6{
-	font-size: 30px;
-	color: var(--primary-color);
+	font-size: 20px;
+	font-weight: 600;
+	margin-top: 10px;
+	text-align: center;
+	color: var(--brightOrange);
+	font-family: 'Quicksand';
+
 }
 
 
@@ -249,11 +361,6 @@
 	border-color:var(--card-color) ;
 	background-color: var(--theme-color);
 }
-.Tarjeta-1:hover{
-	background-color: #0DD976;
-	color: white;
-}
-
 
 
 .Noticia{
@@ -275,7 +382,9 @@
 	margin: 0px 10px 0px 600px;
 }
 
-
+                                /*-------------*/
+                                /*responsive css*/
+                                /*-------------*/
 
 @media only screen and (max-width: 930px) {
 	.Noticia{
@@ -323,6 +432,9 @@
 }
  
 }
+                                /*-------------*/
+                                /*responsive css*/
+                                /*-------------*/
 
 @media only screen and (max-width: 990px){
 .btnad {
@@ -334,5 +446,6 @@
   display: flex;
   min-height: 1rem;
 }
+
 
 }

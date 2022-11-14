@@ -10,7 +10,7 @@
     {% csrf_token %}
     <div class="input-group">
       <!--CASILLA PARA ESCRIBIR-->
-      <input style="width: 300px;" type="text" class="form-control bg-light border-0 small" placeholder="Busca tus productos" name="buscar">
+      <input type="text" class="form-control bg-light border-0 small" placeholder="Busca tus productos" name="buscar">
       <!--BOTON DE BUSCAR-->
       <div class="input-group-append">
         <button class="btn btn-primary" type="submit">
@@ -23,7 +23,7 @@
 {% endblock buscador %}
   <div class="container ItemTienda ">
     <!--<h1 style="text-align: center; margin-top: 0px; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Adopcion para perros</h1>-->
-    <div class="row" style="margin: 20px 20px 0px 20px; " >
+    <div class="row" style="margin: 20px 0px 0px 0px; " >
     {% for producto in tienda %}
         <div class="col-sm-4">
           <div class="card items-t">
@@ -40,33 +40,20 @@
                 <div class="modal-dialog modal-dialog-centered" style="max-width: 600px!important;">
                   <div class="modal-content popup-m" >
                     <div class="modal-header">
-                      <h5 class="modal-title Descripcion-p" id="exampleModalLabel">{{ producto.titulo}} </h5>
+                      <h5 class="modal-title w-100 text-center Descripcion-p" id="exampleModalLabel">{{ producto.titulo}} </h5>
                      
                       <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body popup-m" >
                        <div class="card mb-3 popup-m" >
-                        <div class="row">
-                          <div class="col-md-4" >
-                            <img src="{{ producto.imagen.url }}" style="height: 100%; width: 100%;" class="img-fluid rounded-start" alt="..."></div>
-                            <div class="col-md-8">
-                              <div class="card-body">
-                                <form>
-                                  <label style="max-width: 150px;" for="recipient-name" class="col-form-label Descripcion-p">S/{{ producto.precio}} soles<br></label>
-                                  <div class="col-md-8">
-                                    <label for="recipient-name" style="text-transform: uppercase;" 
-                                    class="col-form-label Descripcion-p">Cantidad:</label>
-                                    <input type="text" class="form-control" id="recipient-name">
-                                  </div>
-                                </form>
-                              </div>
-                            </div>
-                          </div>
+                        <label style="max-width: 150px;" for="recipient-name" class="col-form-label Descripcion-p">S/{{ producto.precio}} soles<br></label>
+                        <div class="row" style="justify-content: center;">
+                            <img src="{{ producto.imagen.url }}" style="height: 40%; width: 40%;" class="img-fluid rounded-start" alt="..."></div>
                         </div>
                       </div>
                     <div class="modal-footer">
-                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                      
+                      <button type="button" class="btn btn-secondary xd-btn" data-bs-dismiss="modal" style="margin:30px 270px 0px 0px;">Close</button>
+                      <p>realiza tu pedido</p>
                       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
                         <a style="width:70px;height:70px;bottom:50px;right:50px;background-color:#25d366;border-radius:50px;text-align:center;font-size:45px;z-index:100;text-decoration: none;
                         color: #25d366;background-color:#fff;margin-top:16px;"

@@ -1,7 +1,6 @@
 from django import http
 from django.shortcuts import render, redirect
 from django.http import HttpResponse, response
-#from flask import request, request_tearing_down
 from .models import Mascotas, Productos
 from .forms import MascotasForm, ProductosForm
 from django.core.mail import send_mail
@@ -142,7 +141,7 @@ def eliminar_productos(request, id):
 #-----------------------------
 def buscar_animales(request):
     busqueda = request.POST.get("buscar")
-    mascotas = Mascotas.objects.all().order_by('-id')
+    mascotas = Mascotas.objects.all()
 
     if busqueda:
         mascotas = Mascotas.objects.filter(

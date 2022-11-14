@@ -10,6 +10,7 @@
         max-width: 600px;
         justify-content: space-between;
     }
+   
  
 }
 
@@ -98,6 +99,17 @@
     .card{
         margin: 40px;
     }
- 
+   
 }
 
+.img-item{
+    
+    height: 100%;
+    width: 100%;
+}
+.fondo{
+    background-color: var(--theme-color);
+}
+.cuerpo{
+    background-color: var(--theme-color);
+}

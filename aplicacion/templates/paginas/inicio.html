@@ -3,7 +3,7 @@
 {% block titulo %} Nuestro Inicio{% endblock %}
 <body>
   {% block contenido %}
-    <!-- slider -->
+     <!-- slider -->
     <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-indicators">
           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -12,14 +12,14 @@
           <div class="carousel-inner">
               <div class="carousel-item active">
                   <div class="capa"></div>
-                  <div class="banner" style="background-image: url(https://static01.nyt.com/images/2021/05/11/science/14tb-grumpy-ESP-00/04TB-DOGS-videoSixteenByNine3000.jpg);"></div>
+                  <div class="banner" style="background-image: url(static/img/puppy-gd6b257198_1920.jpg);"></div>
                       <div class="carousel-caption">
                           <h2>las Mascotas<span>&nbsp;Son fabulosas</span><br><a href="{% url 'animales' %}"><button type="button" class="btn btnadop"style="color:white; background-color: transparent;">Adopta</button></a></h2>
                       </div>
                   </div>
                   <div class="carousel-item">
                       <div class="capa"></div>
-                      <div class="banner" style="background-image: url(https://okdiario.com/img/2022/05/16/gato.jpg);"></div>
+                      <div class="banner" style="background-image: url(static/img/cat-g5af9d98f4_1920.jpg);"></div>
                       <div class="carousel-caption">
                           <h2>Registrate Para poder <span> Publicar tu Mascota</span>
                           </h2>
@@ -27,7 +27,7 @@
                   </div>
                   <div class="carousel-item">
                       <div class="capa"></div>
-                      <div class="banner" style="background-image: url(https://okdiario.com/img/2019/06/10/razas-de-perros-de-tamano-mediano-655x368.jpg);"></div>
+                      <div class="banner" style="background-image: url(static/img/bulldog-g310e69d3b_1920.jpg);"></div>
                       <div class="carousel-caption">
                           <h2>Para una<span>&nbsp;Mejor VIda</span></h2>
                       </div>
@@ -44,6 +44,57 @@
           </div>
 <!--Fin-del-Slider-->
           <br>
+        <div class="Items4">
+            <div class="Pregunta">
+              <h6>¿Por qué adoptar un animalito de nuestra asociacion?</h6>
+            </div>
+            <div class="container">
+              <div class="row" style="margin:60px 0px 0px 0px;">
+                <div class="col-sm-3">
+                  <div class="card Tarjeta-1" style="width: 14rem; margin-top: 20px;">
+                    <i class="fa-solid fa-syringe" style="font-size:48px; margin-top: 20px;color:var(--primary-color)" ></i>
+                    <div class="card-body">
+                      <h5 class="card-title">Vacunado</h5>
+                      <p class="card-text">Antiparasitos y entro otros mas. con nuestras veterinarias asociadas.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-3">
+                  <div class="card Tarjeta-1" style="width: 14rem; margin-top: 20px;">
+                    
+                    <i class="fas fa-bowl-food" style="font-size:48px; margin-top: 20px;color:var(--primary-color)"></i>
+                    <div class="card-body">
+                      <h5 class="card-title">Alimentado</h5>
+                      <p style="color:var(--card-color);" class="card-text">Mejores Nutrientes para su desarrollo. en su rehabilitacion</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-3">
+                  <div class="card Tarjeta-1" style="width: 14rem; margin-top: 20px;">
+                    <i class="fa fa-fill-drip "style="font-size:48px; margin-top: 20px;color:var(--primary-color)"></i>
+
+                    <div class="card-body">
+                      <h5 class="card-title">Aseo</h5>
+                      <p class="card-text">Muy bien bañado y perfumado listo para la adopcion.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-3">
+                  <div class="card Tarjeta-1" style="width: 14rem; margin-top: 20px;">
+                    <i class="fa fa-dog"style="font-size:48px; margin-top: 20px;color:var(--primary-color)"></i>
+                    <div class="card-body">
+                      <h5 class="card-title">Contribucion</h5>
+                      <p class="card-text">Contribuyes a que animalitos rescatados tengan un hogar.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <br>
+          <br>
+                      <!-- Linea de separacion-->
+                      <div class="linea"></div>
 <!-- Nosotros-->
           <section class="about" id="about">
             <div class="image">
@@ -67,10 +118,10 @@
             <div class="carousel-inner ContenidoP">
               <div class="carousel-item active">
                 <div class="capas"></div>
-                <div class="banners" style="background-image: url(https://vivaelnetworking.com/wp-content/uploads/2019/08/mascotas-Scentsy.jpg);"></div></div>
+                <div class="banners" style="background-image: url(static/img/1.png);"></div></div>
                 <div class="carousel-item">
                   <div class="capas"></div>
-                  <div class="banners" style="background-image: url(https://www.publimark.cl/media/k2/items/cache/ffa5995d181a68f34f12d434de180904_XL.jpg);"></div>
+                  <div class="banners" style="background-image: url(static/img/2.png);"></div>
                 </div>
               </div>
               <button class="carousel-control-prev Izquierda" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
@@ -85,10 +136,10 @@
    <!--2-img-publicidad-->
             <div class="img-veterian">
               
-              <img src="https://misanimales.com/wp-content/uploads/2015/05/veterinario-perro.jpg" width="600" height="400"
+              <img src="static/img/vet-g8ad229f47_640.png" width="600" height="300"
               ></img> 
               
-              <img src="http://mascotafiel.com/wp-content/uploads/2016/06/remedios-caseros-para-la-otitis-canina-1_opt.jpg" width="600" height="400"
+              <img src="static/img/313401413_183954044171189_3391592467399113726_n.jpg" width="600" height="300"
                ></img>
               </div>
             </div>
@@ -97,104 +148,133 @@
               <div class="slider-contenido">
                 <div class="logo-s">
                   <a target="_blank" href="https://www.facebook.com/zoovetmollendo/">
-                    <img src="https://www.logaster.com/blog/wp-content/uploads/2020/03/0157.png"></a>
+                    <img src="static/img/logo-g6061ec499_1280.png"></a>
                   </div>
                   <div class="logo-s">
-                    <img src="https://1757140519.rsc.cdn77.org/blog/wp-content/uploads/sites/4/2019/03/0157_t_clinica-veterinaria-venus-logo_8.png">
+                    <img src="https://www.logogenio.es/download/preview/medium/7103546">
                   </div>
                   <div class="logo-s">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREhNw7cLiHuvmkdUxNGFOOSjBk-2QpKGCS24ZM5r1ULcGqoWlCH11_i3rfk2dwxlnlVTA&usqp=CAU">
+                    <img src="https://patasresort.com/wp-content/uploads/2021/04/logo-veterinaria-petfecto.png">
                   </div>
                   <div class="logo-s">
-                    <img src="https://www.logaster.com/blog/wp-content/uploads/2020/03/0157.png">
+                    <img src="http://vetdelvalle.mx/nueva/wp-content/uploads/2020/05/Recurso-2.png">
+                  </div>
+                  <div class="logo-s">
+                    <img src="https://www.logogenio.es/download/preview/medium/7103546">
+                  </div>
+                  <div class="logo-s">
+                    <img src="https://patasresort.com/wp-content/uploads/2021/04/logo-veterinaria-petfecto.png">
                   </div>
                   <div class="logo-s">
                     <a target="_blank" href="https://www.facebook.com/zoovetmollendo/">
-                      <img src="https://st2.depositphotos.com/4398873/6963/v/600/depositphotos_69635947-stock-illustration-pet-shop-logo-template.jpg"></a>
+                      <img src="https://veterinariasedavi.com/new/wp-content/uploads/2020/07/logo-clinica-veterinaria-sedavi.png"></a>
                     </div>
                     <div class="logo-s">
-                      <img src="https://1757140519.rsc.cdn77.org/blog/wp-content/uploads/sites/4/2019/03/0157_t_clinica-veterinaria-venus-logo_8.png">
+                      <img src="https://www.logogenio.es/download/preview/medium/7103546">
                     </div>
                     <div class="logo-s">
-                      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREhNw7cLiHuvmkdUxNGFOOSjBk-2QpKGCS24ZM5r1ULcGqoWlCH11_i3rfk2dwxlnlVTA&usqp=CAU">
+                      <img src="https://patasresort.com/wp-content/uploads/2021/04/logo-veterinaria-petfecto.png">
                     </div>
                     <div class="logo-s">
-                      <img src="https://st2.depositphotos.com/4013359/6501/v/600/depositphotos_65014209-stock-illustration-pet-shop-logo.jpg">
+                      <img src="http://vetdelvalle.mx/nueva/wp-content/uploads/2020/05/Recurso-2.png">
+                    </div>
+                    <div class="logo-s">
+                      <img src="https://www.logogenio.es/download/preview/medium/7103546">
+                    </div>
+                    <div class="logo-s">
+                      <img src="https://patasresort.com/wp-content/uploads/2021/04/logo-veterinaria-petfecto.png">
                     </div>
                   </div>
                 </div>
                 <!--fin-Slider-Infinito-->
                 <!-- Linea de separacion-->
                 <div class="linea"></div>
+                <br><br>
                 <!--Contenido-Adopta-->
                 <div class="contenido">
                   <div class="titulo">
-                    <h5>Detras de esto:</h5>
-                    <p>Por un bien comun</p>
+                    <h5>Detras de esto Por un bien comun:</h5>
                   </div>
-                  <div class="galeria">
-                    <div class="img1">
-                      <img  class="img-fluid"src="https://previews.123rf.com/images/anwarsikumbang/anwarsikumbang1502/anwarsikumbang150200453/36649752-hombre-avatar-de-dibujos-animados-imagen-usuario-personaje-ilustraci%C3%B3n-vectorial.jpg" alt="">
-                      <br>
-                      <p>Eduardo Gomez</p>
-                    </div>
-                    <div class="img2">
-                      <img  class="img-fluid"src="https://us.123rf.com/450wm/zhigulina/zhigulina1903/zhigulina190300025/119150677-retrato-de-un-joven-indio-sonriente-feliz-en-traje-y-corbata-roja-ojos-marrones-piel-oscura-y-cabell.jpg?ver=6" alt="">
-                      <p>David</p>
-                    </div>
-                    <div class="img3"><img  class="img-fluid"src="https://thumbs.dreamstime.com/b/sirva-el-vector-plano-del-estilo-del-avatar-del-web-del-icono-de-la-cara-del-retrato-85797128.jpg" alt="">
-                      <p>Matias Adco</p></div>
-                      <div class="img4"><img  class="img-fluid"src="https://us.123rf.com/450wm/yupiramos/yupiramos1609/yupiramos160912802/62358645-de-dibujos-animados-mujer-de-avatar-persona-de-sexo-femenino-de-usuario-ilustraci%C3%B3n-vectorial.jpg" alt="">
-                        <p>Obel Ccuno Mamani</p></div>
                       </div>
-                      <!-- Linea de separacion-->
-                      <div class="linea"></div>
-
-                      <div class="Items4">
-                        <div class="Pregunta">
-                          <h6>¿Por qué adoptar una Mascota?</h6>
+                      <br><br>
+                      <div class="team">
+                        <div class="card cardc">
+                            <div class="head">
+                                <div class="circle"></div>
+                                <div class="img">
+                                    <img src="static/img/avatar-g0c55a7549_1280.png" alt="" weight="120px" height="120px">
+                                </div>
+                            </div>
+                    
+                            <div class="description">
+                                <h3>Obel David Mamani Ccuno</h3>
+                                <h4>Tecnico en Ingenieria de Software</h4>
+                                <p>Desarrollador de distintos lenguajes de Programacion, Experto en distintas areas TI!</p>
+                            </div>
+                    
+                            <div class="contact">
+                                <a href="https://www.facebook.com/obel.mamaniccunov" target=" _blank">Contact</a>
+                            </div>
                         </div>
-                        <div class="container">
-                          <div class="row" style="margin:60px 0px 60px 20px;">
-                            <div class="col-sm-3">
-                              <div class="card Tarjeta-1" style="width: 14rem; margin-top: 20px;">
-                                <img src="https://cdn-icons-png.flaticon.com/512/2358/2358553.png" class="card-img-top" alt="..." height="190px" width="100px">
-                                <div class="card-body">
-                                  <h5 class="card-title">Vacunado</h5>
-                                  <p class="card-text">Antiparasitos y entro otros mas.</p>
+                    
+                        <div class="card cardc">
+                            <div class="head">
+                                <div class="circle"></div>
+                                <div class="img">
+                                    <img src="static/img/avatar-g57e27eed6_1280.png" alt="">
                                 </div>
-                              </div>
                             </div>
-                            <div class="col-sm-3">
-                              <div class="card Tarjeta-1" style="width: 14rem; margin-top: 20px;">
-                                <img src="https://tupibox.com/tienda/wp-content/uploads/2022/07/Tupidogs-slide-3-1400x717.png" class="card-img-top" alt="..." height="190px" width="100px">
-                                <div class="card-body">
-                                  <h5 class="card-title">Alimentado</h5>
-                                  <p style="color:var(--card-color);" class="card-text">Mejores Nutrientes para su desarrollo</p>
-                                </div>
-                              </div>
+                    
+                            <div class="description">
+                                <h3>Eduardo Gomez Barahona</h3>
+                                <h4>Tecnico en Ingenieria de Software</h4>
+                                <p>Desarrollador de distintos capacidades front-end y backend.</p>
                             </div>
-                            <div class="col-sm-3">
-                              <div class="card Tarjeta-1" style="width: 14rem; margin-top: 20px;">
-                                <img src="https://cdn-icons-png.flaticon.com/512/4213/4213643.png" class="card-img-top" alt="..." height="190px" width="100px">
-                                <div class="card-body">
-                                  <h5 class="card-title">Aseo</h5>
-                                  <p class="card-text">Muy bien bañado y perfumado</p>
-                                </div>
-                              </div>
+                    
+                            <div class="contact">
+                                <a href="https://www.facebook.com/chichastipanik" target=" _blank">Contact</a>
                             </div>
-                            <div class="col-sm-3">
-                              <div class="card Tarjeta-1" style="width: 14rem; margin-top: 20px;">
-                                <img src="https://cdn-icons-png.flaticon.com/256/6664/6664588.png" class="card-img-top" alt="..." height="190px" width="100px">
-                                <div class="card-body">
-                                  <h5 class="card-title">Dog y Cat</h5>
-                                  <p class="card-text">Divertido y juguetones. con todos</p>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
                         </div>
-                      </div>
+                    
+                            <div class="card cardc">
+                            <div class="head">
+                                <div class="circle"></div>
+                                <div class="img">
+                                    <img src="static/img/person-gcb2325d9b_1280.png" alt="">
+                                </div>
+                            </div>
+                    
+                            <div class="description">
+                                <h3>Matias Manuel Adco Larota</h3>
+                                <h4>Tecnico en Ingenieria de Software</h4>
+                                <p>Desarrollador de front-end y backend.!</p>
+                            </div>
+                    
+                            <div class="contact">
+                                <a href="https://www.facebook.com/profile.php?id=100073428852023" target=" _blank">Contact</a>
+                            </div>
+                        </div>
+                    
+                        <div class="card cardc">
+                            <div class="head">
+                                <div class="circle"></div>
+                                <div class="img">
+                                    <img src="static/img/avatar-g8ef347545_1920.png" alt="">
+                                </div>
+                            </div>
+                    
+                            <div class="description">
+                                <h3>ASOCIACION</h3>
+                                <h4>Gerenta</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, eligendi!</p>
+                            </div>
+                    
+                            <div class="contact">
+                                <a href="https://www.facebook.com/profile.php?id=100076697842567" target=" _blank">Contact</a>
+                            </div>
+                        </div>
+                    
+                        </div>
               {% endblock %}
 </body>
 </html>

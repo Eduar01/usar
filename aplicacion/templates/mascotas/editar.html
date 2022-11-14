@@ -3,17 +3,17 @@
 {% block titulo %} Editar {% endblock %}
 
 {% block contenido %}  
-<div class="card" style="margin-top: 150px;" >
-    <div class="card mb-3" style="margin: 50px auto; line-height: 40px;">
-        <div class="row" id="crear">
+<div class="card fondo" style="margin-top: 150px;" >
+    <div class="card mb-3" style="max-width: 1200px;margin: 50px auto; line-height: 40px;">
+        <div class="row cuerpo" id="crear">
             <div class="col-md-4" style="justify-content: center;">
               <img style="align-content: center;height: 100%; width: 100%;"
-              src="https://s3.amazonaws.com/stickers.wiki/Yilinisdoodoo/612591.512.webp" 
+              src="../../static/img/bernese-mountain-dog-gc9f35698f_1920.jpg" 
               class="img-fluid rounded-start"  alt="...">
             </div>
             
             <div class="col-md-8">
-                <div class="card-body" style="margin-top: 20px;">
+                <div class="card-body cuerpo" style="margin-top: 20px;">
                     <h4 class="card-title" style="color: #112452; text-align: center;
                     text-transform:uppercase;">Datos de la Mascott</h4>
                     {% include 'mascotas/form.html' %}

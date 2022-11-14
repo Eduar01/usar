@@ -11,7 +11,7 @@
   {% csrf_token %}
   <div class="input-group" >
     <!--CASILLA PARA ESCRIBIR-->
-    <input style="width: 300px;" type="text" class="form-control bg-light border-0 small" placeholder="Busca tu mascotita" name="buscar">
+    <input type="text" class="form-control bg-light border-0 small" placeholder="Buscar..." name="buscar">
     <!--BOTON DE BUSCAR-->
     <div class="input-group-append">
       <button class="btn btn-primary" type="submit">
@@ -24,7 +24,7 @@
 {% endblock buscador %}
   <div class="container">
     <!--<h1 style="text-align: center; margin-top: 0px; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Adopcion para perros</h1>-->
-    <div class="row" style="margin: 60px 3px 0px 30px; " >
+    <div class="row" style="margin: 60px 0px 0px 0px; " >
     {% for mascotas in animales %}
         <div class="col-sm-4">
           <div class="card items-t">
@@ -35,36 +35,36 @@
             </div>
             <div class="card-body" style="text-align: center;">
         <!--Inicio-popup-->
-              <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#{{ mascotas.titulo }} " data-bs-whatever="@mdo">Detalles</a>
+              <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#{{ mascotas.titulo }} " data-bs-whatever="@mdo">Ver Informacion</a>
               <div class="modal fade" id="{{ mascotas.titulo }}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered popup-m" style="max-width: 800px!important;">
                   <div class="modal-content popup-m">
                     <div class="modal-header">
-                      <img src="https://images.vexels.com/media/users/3/156256/isolated/preview/29692b414e5c01cf4a8c43d613e74930-icono-de-huellas-de-pata.png" class="img-fluid imgr"
+                      <img src="static/img/footprints-g6a50d3d8f_1280.png" class="img-fluid imgr"
                        style="height:50px; width:50px; margin-left: 15px;">
                       <h5 class="modal-title w-100 text-center " style="color:#409bd0; text-transform: uppercase; "
                        id="exampleModalLabel">{{ mascotas.titulo}} </h5>
-                       <img src="https://images.vexels.com/media/users/3/156256/isolated/preview/29692b414e5c01cf4a8c43d613e74930-icono-de-huellas-de-pata.png" class="img-fluid horizontals imgr"
+                       <img src="static/img/footprints-g6a50d3d8f_1280.png" class="img-fluid horizontals imgr"
                        style="height:50px; width:50px;">
                       <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
                        <form >
-                        <div class="Descripcion-p" >Sexo:&nbsp;{{mascotas.sexo}}&nbsp;&nbsp;&nbsp;&nbsp;|<strong>&nbsp;&nbsp;&nbsp;&nbsp;Celular:&nbsp;+51 {{mascotas.telefono}}</strong> </div>
+                        <div class="Descripcion-p" >Sexo:&nbsp;{{mascotas.sexo}}&nbsp;&nbsp;&nbsp;&nbsp;|<strong>&nbsp;&nbsp;&nbsp;&nbsp;Celular:&nbsp;{{mascotas.telefono}}</strong> </div>
                        <p class="Descripcion-p" style=" margin: 0px 12px 30px 12px;">Descripcion:&nbsp;{{mascotas.descripcion}}</p>
                        </form>
-                          <div class="row" style="justify-content: center;">
-                            <img src="{{ mascotas.imagen.url }}" style="height: 40%; width: 40%;" class="img-fluid rounded-start" alt="...">
-                          </div>
-                    </div>
-
+                       <div class="card" style="background-color:#0DD976; color:white; border-color: white; border-radius: 14px;">
+                        <div class="row" style="justify-content: center;">
+                          
+                            <img src="{{ mascotas.imagen.url }}" style="height: 40%; width: 40%;" class="img-fluid rounded-start" alt="..."></div>
+                            
+                               
+                              
+                        </div>
+                      </div>
                     <div class="modal-footer">
                       <button type="button" class="btn" style="background-color:  #893ce8; border-color: non;
-                      color: white;" data-bs-dismiss="modal">Cerrar</button>
-                      <!--
-                      <button type="button" class="btn"  style="background-color: #409bd0; border-color: none;
-                      color: white;" >enviar</button>
-                      -->
+                      color: white;" data-bs-dismiss="modal">Close</button>
                     </div>
                   </div>
                 </div>

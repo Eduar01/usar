@@ -173,6 +173,10 @@ nav ul{
 .pie-pagina{
     width: 100%;
     background-color: var(--footer-color);
+    left: 0;
+    bottom: 0;
+    
+    
 }
 
 .pie-pagina .grupo-1{
@@ -255,6 +259,7 @@ nav ul{
         grid-template-columns: repeat(1, 1fr);
         grid-gap:30px;
         padding: 35px 0px;
+        text-align: center;
     }
     small{
       font-size: 8px;
@@ -262,6 +267,7 @@ nav ul{
 
 
 }
+
 
 
 .obel-text{
@@ -443,7 +449,7 @@ min-height: 550px,
 .blanquito{
   margin:150px;
   background-color: aliceblue;
-  width: 500px;
+  width: 400px;
   height: 750px;
   
 }
@@ -457,18 +463,18 @@ min-height: 550px,
   -o-border-radius: 15px;
   margin: 25px;
   position: absolute;
-  margin-left: 100px;
+  margin-left: 70px;
   margin-top: -150px;
   
 }  
 .principal-obel{
-margin-top:300px;
+margin-top:350px;
 position: absolute;
 align-items: center;
 margin-right: 25px;
 }
 .no{
-margin-top: 350px;
+margin-top: 480px;
 }
 .yapes{
 display: flex;
@@ -493,49 +499,15 @@ padding:10px;
 }
 .cerrar-obel{
 
-margin-left: 425px;
+margin-left: 380px;
 
+}
 }
 @media screen and (max-width:791px){
 .cerrar-obel{
 
-  margin-left: 380px;
+  margin-left: 340px;
 
-}
-}
-}
-
-/* FormPopup*/
-.form-popup {
-  display: none;
-  position: absolute;
-  bottom: 0;
-  right: 100px;
-  border: none;
-  z-index: 9;
-  top: 58px;
-  margin-top: 10px;
-}
-
-.form-container {
-  max-width: auto;
-  padding: 10px;
-}
-.form-popup .form-container #login{
-  background-color: rgb(255, 255, 255);
-}
-.form-popup .form-container #login:hover{
-  background-color: rgba(0, 76, 255, 0.644);
-}
-.form-popup .form-container #close:hover{
-  background-color: rgb(194, 75, 75)
-}
-
-@media screen and (max-width:940px){
-   
-    .form-popup {
-      margin-top: 290px;
-      right: 130px;
 }
 }
 
@@ -581,4 +553,38 @@ margin-left: 425px;
 
 input:checked + .slider::before {
   transform: translateX(32px);
+}
+
+/* FormPopup*/
+.form-popup {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  right: 100px;
+  border: none;
+  z-index: 9;
+  top: 58px;
+  margin-top: 10px;
+}
+
+.form-container {
+  max-width: auto;
+  padding: 10px;
+}
+.form-popup .form-container #login{
+  background-color: rgb(255, 255, 255);
+}
+.form-popup .form-container #login:hover{
+  background-color: rgba(0, 76, 255, 0.644);
+}
+.form-popup .form-container #close:hover{
+  background-color: rgb(194, 75, 75)
+}
+
+@media screen and (max-width:940px){
+   
+    .form-popup {
+      margin-top: 290px;
+      right: 130px;
+}
 }

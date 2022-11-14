@@ -90,7 +90,7 @@ WSGI_APPLICATION = 'sistema.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
-
+"""
 #BASE DE DATOS MySQL
 DATABASES = {
     #Cambiamos el nombre de nuestra base de datos que sera mysql
@@ -105,6 +105,7 @@ DATABASES = {
     }
 }
 
+"""
 #----------------------------------------------------
 
 #BASE DE DATOS POSTGRESQL

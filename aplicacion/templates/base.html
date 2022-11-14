@@ -167,9 +167,11 @@
                 <div class="drop-down-menu">
                     <a href="{% url 'blog' %}">Blog</a>
                 </div>
+                <!--
                 <div class="drop-down-menu">
                     <a href="{% url 'correo' %}">Consultas</a>
                 </div>
+                -->
                 <div class="drop-down-menu">
                     <button class="donar btn-obel" id="open"><i class="fa fa-heart"></i>DONAR</button>
                 </div>
@@ -199,15 +201,19 @@
                             </section>  
                         </div>
                         <!--fin-->
+                <!--
                 <div class="drop-down-menu">
                     <a href="{% url 'registro' %}">Registrate</a>
                 </div>
+                -->
                 <!--INICIO DE SESION POP UP-->
                 {% csrf_token %}
+                <!--
                 <div class="drop-down-menu">
                     <a style="color:#409bd0 ;background-color: var(--theme-color); "href="{% url 'inicio_sesion' %}">
                     <i class="fas fa-user-circle"></i>&nbsp;Login<span class="full-box" ></span></a>
-                </div>              
+                </div>
+                -->
             </ul>
             {% endif %}
         </nav>
